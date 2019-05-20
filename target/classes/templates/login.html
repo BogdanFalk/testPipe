@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Continental Automotive Romania">
+	
+	<title>SmartX Online Platform | Login</title>
+	
+	<link rel="stylesheet" href="/webjars/bootstrap/4.2.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/login.css">
+</head>
+
+<body>
+	<div class="container">
+		
+		<p th:if="${invalidCredentials}">Username or password is not correct.</p>
+		
+		<form class="form-signin" method="POST" th:action="@{/login}" th:object="${loginForm}">
+			<div class="text-center mb-4">
+				<h1 class="h3 mb-3 font-weight-normal">SmartX Online Platform | Login</h1>
+			</div>
+
+			<div class="form-label-group">
+				<input type="text" name="username" class="form-control" placeholder="Username" required autofocus> 
+			</div>
+
+			<div class="form-label-group">
+				<input type="password" name="password" class="form-control" placeholder="Password" required>
+			</div>
+
+			<div class="checkbox mb-3">
+				<label> <input type="checkbox" value="remember-me"> Remember me</label>
+			</div>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+			
+			<p class="text-center">- OR -</p>
+			
+			<a class="btn btn-lg btn-secondary btn-block" href="/user/register">Create a new account</a>
+		</form>
+
+		<footer>
+			<p class="text-center">&copy; 2019 Continental Corporation. All rights reserved.</p>
+		</footer>
+	</div>
+</body>
+</html>

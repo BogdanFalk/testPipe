@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: uib03632
+Build-Jdk: 11.0.2
+Implementation-Title: WebPortal
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.conti.smartx
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/webportal
+Created-By: Maven Integration for Eclipse
+

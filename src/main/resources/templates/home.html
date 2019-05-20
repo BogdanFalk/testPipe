@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Continental Automotive Romania">
+    
+    <title>SmartX Online Platform | Home</title>
+    
+	<link rel="stylesheet" href="/webjars/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/design.css">
+    
+    <script src="/webjars/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    
+  </head>
+  
+  <body>
+  	<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+  		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">SmartX Online Platform</a>
+  		<ul class="navbar-nav px-3">
+			<li class="nav-item text-nowrap"><a class="nav-link" href="/logout">Logout</a></li>
+		</ul>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+		
+			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+		      <div class="sidebar-sticky">
+		        <ul class="nav flex-column">
+		          <li class="nav-item">
+		            <a class="nav-link active" href="/"><span data-feather="home"></span>Home <span class="sr-only">(current)</span></a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="/profile"><span data-feather="home"></span>Profile </a>
+		          </li>
+				</ul>
+		      </div>
+		    </nav>
+		
+		    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+		      <h2>My devices</h2>
+		      <div class="table-responsive">
+		        <table class="table table-striped table-sm">
+		          <thead>
+		            <tr>
+		              <th>#</th>
+		              <th>Vehicle Number</th>
+		              <th>SIM ICCID</th>
+		              <th>Device Status</th>
+		              <th>Options</th>
+		            </tr>
+		          </thead>
+		          <tbody>
+		            <tr>
+		              <td>1</td>
+		              <td>Vehicle 112</td>
+		              <td>11223344556677</td>
+		              <td>Sleep</td>
+		              <td><a href="/device/info">More Info</a></td>
+		            </tr>
+		            <tr>
+		              <td>2</td>
+		              <td>My Vehicle</td>
+		              <td>77889910101122</td>
+		              <td>Active</td>
+		              <td><a href="/device/info">More Info</a></td>
+		            </tr>
+		            <tr>
+		              <td>3</td>
+		              <td>My other veh</td>
+		              <td>9988776655443322</td>
+		              <td>Pending Calibration</td>
+		              <td><a href="/device/info">More Info</a></td>
+		            </tr>
+		          </tbody>
+		        </table>
+		      </div>
+		      <a class="btn btn-lg btn-secondary" href="/device/add">ADD DEVICE</a>
+		    </main>
+		  </div>
+		</div>
+  </body>
+</html>

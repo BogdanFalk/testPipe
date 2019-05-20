@@ -1,0 +1,4 @@
+set HTTP_PROXY=http://uidq6826:Online*121@cias3basic.conti.de:8080
+set HTTPS_PROXY=http://uidq6826:Online*121@cias3basic.conti.de:8080
+
+set

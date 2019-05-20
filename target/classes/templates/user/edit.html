@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Continental Automotive Romania">
+	
+	<title>SmartX Online Platform | Edit Profile</title>
+	
+	<link rel="stylesheet" href="/webjars/bootstrap/4.2.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../assets/css/login.css">
+</head>
+
+<body>
+	<div class="container">
+		<form class="form-signin" method="POST" th:action="@{/user/update}" th:object="${userProfileEditForm}">
+			<div class="text-center mb-4">
+				<h1 class="h3 mb-3 font-weight-normal">SmartX Online Platform | Edit Profile</h1>
+			</div>
+			
+			<div class="form-label-group">
+				<input type="text" name="username" class="form-control" placeholder="Choose a username" th:value="${username}" required autofocus>
+			</div>
+
+			<div class="form-label-group">
+				<input type="password" name="password" class="form-control" placeholder="Choose a password" th:value="${password}" required>
+			</div>
+
+			<div class="form-label-group">
+				<input type="email" name="email" class="form-control" placeholder="Choose an email address" th:value="${email}" required> 
+			</div>
+
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Save changes</button>
+		</form>
+
+		<footer>
+			<p class="text-center">&copy; 2019 Continental Corporation. All rights reserved.</p>
+		</footer>
+	</div>
+</body>
+</html>

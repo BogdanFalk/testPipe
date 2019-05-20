@@ -1,0 +1,11 @@
+webportal\main\WebSocketHandler.class
+webportal\main\Main.class
+webportal\forms\UserLoginObject.class
+webportal\services\DatabaseService.class
+webportal\config\SecurityConfig.class
+webportal\config\WebSocketConfiguration.class
+webportal\controllers\UserController.class
+webportal\controllers\HomeController.class
+webportal\forms\UserRegistrationObject.class
+webportal\controllers\DeviceController.class
+webportal\forms\DeviceRegistrationObject.class
